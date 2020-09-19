@@ -24,8 +24,6 @@ class HackerNewsSearchTest(unittest.TestCase):
         search_box.send_keys('ittroubleshooter.in')
         search_box.send_keys(Keys.RETURN)
         time.sleep(3)  # simulate long running test
-        que.send_keys(Keys.ARROW_DOWN)
-        que.send_keys(Keys.RETURN)
         # self.assertIn('ittroubleshooter', browser.page_source)
 
     # def test_hackernews_search_for_selenium(self):
