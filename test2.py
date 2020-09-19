@@ -23,6 +23,7 @@ class HackerNewsSearchTest(unittest.TestCase):
         search_box = browser.find_element_by_name('q')
         search_box.send_keys('ittroubleshooter.in')
         search_box.send_keys(Keys.RETURN)
+        browser.get('https://ittroubleshooter.in/')
         time.sleep(3)  # simulate long running test
         # self.assertIn('ittroubleshooter', browser.page_source)
 
