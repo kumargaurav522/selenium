@@ -7,14 +7,14 @@ from selenium.webdriver.common.keys import Keys
 
 class ITTroubleshooterSearchTest(unittest.TestCase):
 
-    # def setUp(self):
-    #     caps = {'browserName': os.getenv('firefox', 'firefox')}
-    #     self.browser = webdriver.Remote(
-    #         command_executor='http://192.168.1.2:4444/wd/hub',
-    #         desired_capabilities=caps
-    #     )
     def setUp(self):
-        self.browser = webdriver.Chrome()
+        caps = {'browserName': os.getenv('firefox', 'firefox')}
+        self.browser = webdriver.Remote(
+            command_executor='http://192.168.1.2:4444/wd/hub',
+            desired_capabilities=caps
+        )
+    # def setUp(self):
+    #     self.browser = webdriver.Chrome()
 
     def test_ITTroubleshooter_search_for(self):
         browser = self.browser
