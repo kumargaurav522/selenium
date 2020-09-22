@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 class HackerNewsSearchTest(unittest.TestCase):
 
     def setUp(self):
-        caps = {'browserName': os.getenv('chrome', 'chrome')}
+        caps = {'browserName': os.getenv('firefox', 'firefox')}
         self.browser = webdriver.Remote(
             command_executor='http://192.168.1.2:4444/wd/hub',
             desired_capabilities=caps
