@@ -4,9 +4,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-
 class ITTroubleshooterSearchTest(unittest.TestCase):
-
     def setUp(self):
         caps = {'browserName': os.getenv('firefox', 'firefox')}
         self.browser = webdriver.Remote(
